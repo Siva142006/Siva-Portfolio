@@ -1,0 +1,157 @@
+.project-grid {
+  margin-top: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .container {
+    position: relative;
+  }
+
+  .navbar-collapse {
+    background: rgba(8, 15, 28, 0.96);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 18px;
+    margin-top: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .navbar-nav {
+    margin: 0 0 0.75rem !important;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.8rem 0.8rem !important;
+  }
+
+  .navbar-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding-top: 130px;
+  }
+
+  .hero-copy {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-actions,
+  .social-row {
+    justify-content: center;
+  }
+
+  .terminal-panel {
+    margin-top: 2rem;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-space {
+    padding: 90px 0;
+  }
+
+  .section-space-sm {
+    padding: 55px 0;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.4rem, 10vw, 3.6rem);
+  }
+
+  .terminal-window {
+    min-height: 430px;
+  }
+
+  .project-card.featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .process-timeline::before {
+    display: block;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: auto;
+    transform: none;
+    background: linear-gradient(
+      180deg,
+      rgba(96, 165, 250, 0.3),
+      rgba(139, 92, 246, 0.4)
+    );
+  }
+
+  .process-step {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .process-card {
+    min-height: 100px;
+  }
+
+  .cta-panel {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .footer-top {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-copy p {
+    font-size: 1rem;
+  }
+
+  .hero-actions .btn,
+  .cta-actions .btn,
+  .navbar-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-row {
+    gap: 0.7rem;
+  }
+
+  .social-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+  }
+
+  .timeline-meta {
+    text-align: left;
+  }
+
+  .education-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
